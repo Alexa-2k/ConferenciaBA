@@ -1,0 +1,146 @@
+.alerta {
+    display: none;
+    width: 50%;
+    padding: 0.5% ;
+    background-color: #fffff0;
+    color: #AAA;
+    border: #ffc900 solid 2px;
+    border-radius: 5px;
+    opacity: 1;
+    z-index: index 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+  }
+
+  .alerta-roja {
+   /* display: none; */
+   width: 50%;
+   padding: 0.5% ;
+   background-color: #FFCCCC;
+   color: #AAA;
+   border: #ff0000 solid 2px;
+   border-radius: 5px;
+   opacity: 1;
+   z-index: index 1;
+   transition: opacity 0.6s;
+   margin-bottom: 15px;
+   position: absolute;
+   top: 30%;
+   left: 25%;
+   text-align: center;
+ }
+
+
+  .alerta h3, h2{ 
+    font-weight: 300;
+  }
+
+ .mensaje {
+    margin: 1.5% auto;
+ }
+ #iconoOK {
+    margin-left: 6%;
+ }
+
+ .totalOK{ 
+    display: none;
+    width: 40%;
+    padding: 1% ;
+    padding-top: 0.7;
+    background-color: #FFF;
+    color: #7D7D7D;
+    border:  #97c83e solid 2px;
+    border-radius: 7px;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    text-align: center;
+ }
+
+ #resumen li { 
+    text-align: left;
+
+}
+ .totalOK h3, h4 {
+    font-weight: 400;
+ }
+
+ .persona, .entradas {
+    display: inline-flex;
+    color: #7D7D7D;
+    font-size: 1rem;
+    text-justify:left;
+    width: 49%;
+    margin-left: 1%;
+ }
+ .entradas {
+    padding-left: 10%;
+ }
+
+ #li-total {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: darkslategray;
+
+ }
+  .closebtn {
+    margin-left: 15px;
+    background-color: #FFA1A1;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bolder;
+    float: right;
+    font-size: 23px;
+    height: 25px;
+    width: 25px;
+    padding-bottom: 0; 
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    transform: scale(1.4);
+    transition: 0.3s;
+  }
+
+  .btn-pago {
+    background-color: #97c83e;
+    width: 49%;
+    display:inline-block;
+    position: relative;
+    height: 2.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-top: 1.7%;
+    color: #FFF;
+    border-radius: 4px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+  }
+
+  .alerta-loginOK {
+   display: none;
+   width: 50%;
+   padding: 0.5% ;
+   background-color: #FFF;
+   color: #7D7D7D;
+   border: #97c83e solid 2px;
+   border-radius: 5px;
+   opacity: 1;
+   z-index: index 1;
+   transition: opacity 0.6s;
+   margin-bottom: 15px;
+   position: absolute;
+   top: 30%;
+   left: 25%;
+   text-align: center;
+ }
+

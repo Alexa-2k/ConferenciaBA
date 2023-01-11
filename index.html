@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      /* margin: auto; */
+    }
+    </style>
+  <!-- STYLE & FONTS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <title>Conferencia Bs As</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>  
+      <a href="https://www.buenosaires.gob.ar/educacion/codo-codo"><img src="Images/codoacodo.png" alt="Logo-codo-a-codo" id = "logo"></a>
+      <div id = "conf">
+          <p>Conf Bs As</p>
+        </div>
+      <div class="caja-tickets">
+        <a class="nav-link" href="#conferencia">La conferencia</a>
+        <a class="nav-link" href="#oradores">Los oradores</a>
+        <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+        <a class="nav-link" href="#inscripcion">Convertite en orador</a>
+        <a class="nav-link colorverde" href="registro.html" color="green">Registro/Login </a>
+      </div>
+
+    </nav>
+
+    <a name="conferencia"></a>
+    <section class="portada">
+      <img src="Images/bsas1.jpg"  class="img" alt="Palacio-de-Aguas-Corrientes">     
+    </section>
+
+    <article class="titulo-portada">
+      <h1>Conf Bs As</h1><br>
+      <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
+        experiencia de los expertos que están creando el futuro de internet. Vení a conocer a miembros del evento, a
+        otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para vos. <br>¡Te esperamos!</p>
+    
+        <div class="botones-portada">
+           <button type="button" class= "btn transp"id="quiero-ser" onclick ="window.location.href='#inscripcion';">Quiero ser orador</button>
+           <button type="button" class= "btn darkgreen" id="tickets"  onclick="window.location.href='tickets.html';">Comprar tickets</button> 
+        </div>      
+    </article>
+  </header>
+
+  <main>
+    <section id="los-oradores">
+      <a name="oradores"></a>
+      <div class="oradores-titulo">
+        <p>CONOCE A LOS</p>
+        <h2>ORADORES</h2>
+      </div>
+
+      <div class="container" id="container-oradores">
+        <div class="row">
+
+          <div class="col cuadro" id="Steve">
+            <img src="Images/steve-j.png" class=" foto-orador" alt="Steve-Jobs">
+            <div class="temas">
+
+              <div class="tema t1" id="objective">
+                <p>Objective-C</p>
+              </div>
+              <div class="tema t2" id="swift">
+                <p>Swift</p>
+              </div>
+            </div>
+            <div class=texto-orador>
+              <h3>Steve Jobs</h3>
+
+              <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas atque eum nihil officia sequi
+                odio dolores ratione aut doloribus. Quisquam delectus similique voluptatem ipsum tenetur optio nesciunt
+                praesentium vel! </p>
+            </div>
+          </div>
+
+          <div class="col cuadro" id="Bill">
+            <img src="Images/bill.jpg" class="foto-orador" alt="Bill-Gates">
+            <div class="temas">
+
+              <div class="tema t1" id="no-code">
+                <p>No-Code</p>
+
+              </div>
+              <div class="tema t2" id="win-app">
+                <p>Win App SDK</p>
+              </div>
+            </div>
+            <div class=texto-orador>
+              <h3>Bill Gates</h3>
+
+              <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas atque eum nihil officia sequi
+                odio dolores ratione aut doloribus. Quisquam delectus similique voluptatem ipsum tenetur optio nesciunt
+                praesentium vel! </p>
+            </div>
+          </div>
+
+          <div class="col cuadro">
+            <img src="Images/ada.jpeg" class="foto-orador" alt="Ada Lovelace">
+            <div class="temas">
+
+              <div class="tema t1" id="ia">
+                <p>IA</p>
+              </div>
+              <div class="tema t2" id="analytical-eng">
+                <p>Analytical Engine</p>
+              </div>
+            </div>
+
+            <div class=texto-orador>
+              <h3>Ada Lovelace</h3>
+              <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas atque eum nihil officia sequi
+                odio dolores ratione aut doloribus. Quisquam delectus similique voluptatem ipsum tenetur optio nesciunt
+                praesentium vel! </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a name="lugar"></a>
+  <section id="BA-lugar">
+    <div class="container" id="carousel-ba">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+       <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+          <li data-target="#myCarousel" data-slide-to="10"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+           <img src="Images/ba4.png" alt="Bs-As-obelisco">
+            <div class="carousel-caption">
+              <h3>El obelisco</h3>
+              <p>Emblema de la ciudad</p>
+            </div>
+          </div>
+
+        <div class="item">
+            <img src="Images/jardin_japones_puente_1200.jpg"   alt="Jardin-Japones">
+            <div class="carousel-caption">
+              <h3>Jardin Japonés</h3>
+              <p>Donado por el gobierno japonés, un paraíso en medio de la ciudad</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img src="Images/caminito.jpg" alt="Caminito" >
+            <div class="carousel-caption">
+              <h3>Caminito</h3>
+              <p>El tradicional estilo de la "república" de La Boca</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img src="Images/Floralis-Generica.jpg" alt="Floralis-generica" >
+            <div class="carousel-caption">
+              <h3>Floralis genérica</h3>
+              <p>Hermosa escultura dinámica en Palermo</p>
+            </div>
+          </div>
+                  
+          <div class="item">
+            <img src="Images/Malba.jpg" alt="MALBA">
+            <div class="carousel-caption">
+              <h3>MALBA - Museo de Arte Latinoamericano de Bs As</h3>
+              <p>Alberga colecciones de los más importantes artistas de latinoamérica</p>
+            </div>
+        </div> 
+       
+        <div class="item">
+            <img src="Images/planetario.jpg" alt="Planetario">
+            <div class="carousel-caption">
+              <h3>Planetario</h3>
+              <p>Vanguardista edificio, con un moderno planetario y propuestas para todas las edades</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/teatro colon interior lindo.jpg" alt="Teatro-Colon">
+            <div class="carousel-caption">
+              <h3>Teatro Colón</h3>
+              <p>Mundialmente famoso por su inigualable acústica, favorito de músicos y cantantes de ópera</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/jacarandas.png" alt="Jacaranda">
+            <div class="carousel-caption">
+              <h3>Jacarandá</h3>
+              <p>Desde fines de octubre Bs As se tiñe de lila</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/museo arte decorativo.jpg" alt="Museo-Arte-Decorativo">
+            <div class="carousel-caption">
+              <h3>Museo de arte decorativo</h3>
+              <p>En su señorial palacio se pueden apreciar colecciones tradicionales de todo el mundo</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="Images/puente_mujer.jpg" alt="Puerto-Madero">
+            <div class="carousel-caption">
+              <h3>Puerto Madero</h3>
+              <p>El moderno puente destaca en el perfil de Puerto Madero</p>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="Images/gran splendid.jpg" alt="Libreria-Gran-Splendid">
+            <div class="carousel-caption">
+              <h3>Librería Gran Splendid</h3>
+              <p>Un majestuoso teatro convertido en la librería más hermosa del país</p>
+            </div>
+          </div>
+        
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    <article id="octubre-txt">
+      <br><br>
+     <h2>Viví Buenos Aires en Octubre</h2>
+      <p><br>Buenos Aires es la ciudad capital de la República Argentina, y una de las capitales mundiales de la
+        cultura. Sede de íconos culturales como el Teatro Colón, el MALBA, el Museo de Arte Decorativo, el Museo Nacional de Bellas Artes, la Librería El Ateneo Grand Splendid o el Planetario, entre otros, ofrece a sus visitantes un amplio y heterogéneo repertorio de actividades, muchas de ellas, gratuitas. Sumergite en sus callejuelas antiguas o admirá sus arboladas avenidas y parques, mientras disfrutás de una moderna selección de gastronomía internacional. </p><br>
+      <!-- <div class=button> -->
+          <button type="button" class= "btn transp" id="conoce" onclick ="window.location.href='//turismo.buenosaires.gob.ar/es/recorrido/imperdibles';">Conocé más</button>
+      <!-- </div> -->
+      
+    </article>
+  
+  </section>
+
+  <section class="convertite">
+    <a name="inscripcion"></a>
+    <div class="oradores-titulo">
+      <p>CONVERTITE EN UN</p>
+      <h2>ORADOR</h2>
+      <p>Anotate como orador para dar una <span class="ignite">charla ignite</span>. Contanos de qué querés hablar</p>
+    </div>
+
+    <div class = "inscripcion-form" >
+          <form action="./forms/oradores.php" method="POST" role="form" class="php-email-form">
+            
+            <fieldset>
+            <input type="text" id="nombre" class="input" name= "orador_nm" placeholder = "Nombre y apellido" required>
+            <input type="email" id="email" class="input" name = "orador_email" placeholder = "e-mail"  required>
+            
+            <textarea id = "tema-charla" rows="10" cols = 118 wrap = hard name = "temario" placeholder="Contanos sobre qué querés hablar"></textarea>
+            <div id="inscripcion-txt"> 
+                <p>Recordá incluir un título para tu charla</p>
+              </div>
+           </fieldset>
+           <div class="boton_insc">
+               <button type="submit" class= btn id="btn_inscripcion" >Enviar</button> 
+           </div>  
+        </form>
+          
+        </div>
+     
+     
+  </section>
+  <script src="conferencia.js"></script>
+
+  
+  <footer>
+    <div class="container">
+        <div class="row">
+  
+          <div class="col footer-item ">
+            <p>Preguntas frecuentes</p>
+          </div>
+  
+          <div class="col footer-item">
+            <p>Contactanos</p>
+          </div>
+  
+          <div class="col footer-item">
+            <p>Prensa</p>
+          </div>
+  
+          <div class="col footer-item">
+            <a class = "link-tickets " href="../tickets.html"><p class = "footer-item">Tickets</p></a>
+          </div>
+  
+          <div class="col footer-item ">
+            <p>Términos y condiciones</p>
+          </div>
+  
+          <div class="col footer-item">
+            <p>Privacidad</p>
+          </div>
+          <div class="col footer-item">
+            <p>Estudiantes</p>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+footer {
+    background: linear-gradient(to right, #1d3744, #1d5271);
+    color: whitesmoke;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    flex-direction: row;
+    padding: 0.5% 0;
+    flex-wrap: nowrap;
+    height: 60px ;
+    align-self: baseline;
+
+}
+
+.footer-item {
+    padding: 1% 3% 0 3%;
+    text-align: center;
+    flex-wrap: wrap;
+    max-height: 50px;
+
+}
+.link-tickets {
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+
+.link-tickets:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+/*  <a class = "link-tickets" href="../tickets.html"><p class = "footer-item">Tickets</p></a> */
+ 
