@@ -1,7 +1,7 @@
 <?php 
 	session_start();
-	// $db = mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
-	$db = mysqli_connect('localhost', 'root', '', 'cac_2022');
+	$db = mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
+	// ('localhost', 'root', '', 'cac_2022');
 
 	// inicializa variables
 	$orNombre = "";

@@ -10,7 +10,7 @@ if (isset($_GET['edit'])) {
 		$n = mysqli_fetch_array($record);
 		$orNombre = $n['nombre'];
 		$orEmail = $n['email'];
-    $temario = $n['temario'];
+        $temario = $n['temario'];
    
   }
 
@@ -31,7 +31,11 @@ if (isset($_GET['edit'])) {
 <link rel="stylesheet" type="text/css" href="../css/regData.css">
 <link rel="stylesheet" type="text/css" href="../css/alerta.css">
 <link rel="stylesheet" type="text/css" href="../css/footer.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    </style>
+    
 </head>
 <body>
 

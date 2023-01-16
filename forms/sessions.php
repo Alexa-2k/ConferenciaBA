@@ -13,12 +13,12 @@ $passAsk == $adminPwd))
     $_SESSION['usrname'] = $adminUser;
     $_SESSION['passwd'] = $adminPwd;
     
-    header("Location: ./admin.php");
+    header("Location: ../forms/admin.php");
     exit();
 } else {
     
-    // $my_query=mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
-    $my_query=mysqli_connect("localhost","root","","cac_2022");
+    $my_query=mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
+    // ("localhost","root","","cac_2022");
     // Check connection
         if (mysqli_connect_errno())
         {

@@ -1,27 +1,30 @@
 <?php
-include('serverOrador.php');
-$my_query=mysqli_connect("localhost","root","","cac_2022");
-// $my_query=mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
+// $my_query=mysqli_connect("localhost","root","","cac_2022");
 
-$orNombre = $_POST['orador_nm'];
-$orEmail = $_POST['orador_email'];
+$my_query=mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
+
+//  Check connection
+ if (mysqli_connect_errno())
+ {
+ echo "Failed to connect to MySQL: " . mysqli_connect_error();
+ }
+
+
+$orNombre = $_POST['nombre'];
+$orEmail = $_POST['email'];
 $temario = $_POST['temario'];
 
-$buscaUser = $my_query->query("SELECT * FROM orador WHERE email ='$orEmail'");
+
+ $buscaUser = $my_query->query("SELECT * FROM orador WHERE email ='$orEmail'");
 
 
-if($buscaUser->num_rows==0){
-$queryInsertar = "INSERT INTO orador (nombre, email, temario) VALUES('$orNombre', '$orEmail', '$temario')";
+ if($buscaUser->num_rows==0){
+ $queryInsertar = "INSERT INTO orador (nombre, email, temario) VALUES('$orNombre', '$orEmail', '$temario')";
 
-$insert = mysqli_query($my_query,$queryInsertar);
+ $insert = mysqli_query($my_query,$queryInsertar);
 
-// Check connection
-if (mysqli_connect_errno())
-{
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
 
-$result = mysqli_query($my_query,"SELECT * FROM orador WHERE email = '$orEmail'");
+ $result = mysqli_query($my_query,"SELECT * FROM orador WHERE email = '$orEmail'");
 ?>
 
 
@@ -44,20 +47,24 @@ $result = mysqli_query($my_query,"SELECT * FROM orador WHERE email = '$orEmail'"
 
 </script>
 
-<title>Read Data</title>
+<title>Registro de Oradores</title>
 
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../css/admin.css">
 <link rel="stylesheet" type="text/css" href="../css/regData.css">
 <link rel="stylesheet" type="text/css" href="../css/alerta.css">
 <link rel="stylesheet" type="text/css" href="../css/footer.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    </style>
+    
 
 </head>
 <body>
 
 <table class= 'titulo'>
-<tr><th class = 'titulo'><h1>Bienvenido, <?php echo($orNombre. " " ) ?></h1></th></tr>
+<tr><th class = 'titulo'><h1>Bienvenido, <?php echo($orNombre) ?></h1></th></tr>
 <tr><td class= 'titulo'><center><h2 class="centered-p"> Acá podés verificar si tus datos fueron registrados correctamente </h2></center></td></tr>
 
 
@@ -76,9 +83,9 @@ $result = mysqli_query($my_query,"SELECT * FROM orador WHERE email = '$orEmail'"
 while($row = mysqli_fetch_assoc($result))
 {
 echo "<tr>";
-echo "<td class='datos' width ='10%'>" . $row['nombre'] . "</td>";
-echo "<td class='datos' width ='10%'>" . $row['email'] . "</td>";
-echo "<td class='datos' width ='30%'>" . $row['temario'] . "</td>";
+echo "<td class='datos' width ='10%'>".$row['nombre']."</td>";
+echo "<td class='datos' width ='10%'>".$row['email']."</td>";
+echo "<td class='datos' width ='30%'>".$row['temario']."</td>";
 
 echo "</tr>";
 }

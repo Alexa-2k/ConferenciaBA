@@ -1,7 +1,7 @@
 <?php 
-	// session_start(); 
-	// $db = mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
-	$db = mysqli_connect('localhost', 'root', '', 'cac_2022');
+	session_start(); 
+	$db = mysqli_connect("localhost","id19634033_root","LoreConferenciaDB1*","id19634033_cac_2022");
+	// ('localhost', 'root', '', 'cac_2022')
 	// inicializa variables
 	$nombre = "";
 	$apellido = "";
@@ -37,7 +37,11 @@
 	<link rel="stylesheet" type="text/css" href="../css/regData.css">
 	<link rel="stylesheet" type="text/css" href="../css/alerta.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    </style>
+    
 </head>
 <body>
 <?php   
