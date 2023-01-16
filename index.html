@@ -12,20 +12,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
+     <!-- STYLE & FONTS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">-->
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'); 
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       width: 100%;
       /* margin: auto; */
     }
+    
     </style>
-  <!-- STYLE & FONTS -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+ 
+
+<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'); </style>
 
   <title>Conferencia Bs As</title>
 
@@ -43,7 +46,7 @@
         <a class="nav-link" href="#oradores">Los oradores</a>
         <a class="nav-link" href="#lugar">El lugar y la fecha</a>
         <a class="nav-link" href="#inscripcion">Convertite en orador</a>
-        <a class="nav-link colorverde" href="registro.html" color="green">Registro/Login </a>
+        <a class="nav-link colorverde" href="registro.html" color="green"> Registro / Login</a>
       </div>
 
     </nav>
@@ -60,7 +63,7 @@
         otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para vos. <br>¡Te esperamos!</p>
     
         <div class="botones-portada">
-           <button type="button" class= "btn transp"id="quiero-ser" onclick ="window.location.href='#inscripcion';">Quiero ser orador</button>
+           <button type="button" class= "btn transp" id="quiero-ser" onclick ="window.location.href='#inscripcion';">Quiero ser orador</button>
            <button type="button" class= "btn darkgreen" id="tickets"  onclick="window.location.href='tickets.html';">Comprar tickets</button> 
         </div>      
     </article>
@@ -288,8 +291,8 @@
           <form action="./forms/oradores.php" method="POST" role="form" class="php-email-form">
             
             <fieldset>
-            <input type="text" id="nombre" class="input" name= "orador_nm" placeholder = "Nombre y apellido" required>
-            <input type="email" id="email" class="input" name = "orador_email" placeholder = "e-mail"  required>
+            <input type="text" id="nombre" class="input" name= "nombre" placeholder = "Nombre y apellido" required>
+            <input type="email" id="email" class="input" name = "email" placeholder = "e-mail"  required>
             
             <textarea id = "tema-charla" rows="10" cols = 118 wrap = hard name = "temario" placeholder="Contanos sobre qué querés hablar"></textarea>
             <div id="inscripcion-txt"> 

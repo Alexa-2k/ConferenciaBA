@@ -22,8 +22,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" >-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    </style>
+    
+
 
 <style>        
 </style>
@@ -75,8 +79,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 mt-5 mt-lg-0 d-flex align-items-stretch">
             
-            <form action="./forms/userAdmin.php" method="POST" role="form" class="php-email-form">
-              <!-- <form action="./forms/showTable.php" method="POST" role="form" class="php-email-form"></form>  -->
+            <form action="../forms/userAdmin.php" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
         
@@ -131,7 +134,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 mt-5 mt-lg-0 d-flex align-items-stretch">
             
-            <form action="./forms/sessions.php" method="POST" role="form" class="php-email-form">
+            <form action="../forms/sessions.php" method="POST" role="form" class="php-email-form">
                <div class="row">
                   <div class="form-group col-md-6">
                     <label for="name">Nombre de usuario</label>
@@ -146,10 +149,9 @@
                 </div>
 
                 <div class="row justify-content-center">
-                  
                   <button type="submit" class= "btn-verde btn_login2" onclick="" id="btn_login2">Login</button>
-                  </div> 
-                </div>  
+                </div> 
+                  
             </form>
           </div>
         </div>
